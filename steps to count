@@ -1,0 +1,10 @@
+# Convert to grayscale
+# Apply GaussianBlur to reduce noise
+# Edge detection (Canny or alternative thresholding)
+# Find contours
+# Loop through contours and filter for squares
+# Approximate the contour
+# Check if it has 4 vertices, is convex, and has area above a threshold
+# Get side lengths to ensure they’re roughly equal
+# Draw the contour on the image
+# Display the result
