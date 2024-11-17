@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread('squares.png')
+image = cv2.imread('squares2.png')
 if image is None:
     raise ValueError("Image not found or unable to load.")
 
@@ -25,7 +25,7 @@ for contour in contours:
             square_count += 1
             cv2.drawContours(image, [approx], -1, (0, 255, 0), 3)
 
-print(f"Number of squares: {square_count/4}")
+print(f"Number of squares: {square_count/2}")
 cv2.imshow("Squares", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
